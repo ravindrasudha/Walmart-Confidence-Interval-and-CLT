@@ -1,60 +1,93 @@
-# Walmart-Confidence-Interval-and-CLT
+<div align="center">
+  <h1>🛒 Walmart Black Friday Spending Analysis</h1>
+  <h2>Confidence Intervals & Central Limit Theorem</h2>
+  <p><strong>Statistical deep-dive into customer purchase behavior by gender, age group, and marital status</strong></p>
 
- # Problem Statement
+  <!-- Clean Socialify banner – choose ONE style (I recommend the first for dark/light auto theme) -->
+ 
 
-Walmart wants to find out who spends more on Black Friday — men or women. With 50
-million customers each, the goal is to uncover shopping patterns to make smarter business
-decisions.
+  <!-- Alternative light version if you prefer -->
 
- # About Walmart
+  <img src="https://socialify.git.ci/ravindrasudha/Walmart-Confidence-Interval-and-CLT/image?custom_language=Python&description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTn7vLAq1blnq8v5qDn7ObGnM3oIgAyl0Za0Q%26s&name=1&owner=1&pulls=1&stargazers=1&theme=Light" 
+       alt="Socialify banner - Light theme" 
+       width="720"/>
+  
 
-Walmart is an American multinational retail corporation that operates a chain of supercenters, discount departmental stores, and grocery stores from the United States. Walmart has more than 100 million customers worldwide.
+  <br/>
 
- # The dataset has the following features:
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Seaborn-FF6384?style=for-the-badge&logoColor=white" alt="Seaborn"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Statistics-4CAF50?style=for-the-badge&logo=google-analytics&logoColor=white" alt="Statistics"/>
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Last%20Updated-Jul%202025-success?style=for-the-badge&logo=git&logoColor=white" alt="Last Updated"/>
 
-User_ID:	User ID
-Product_ID:	Product ID
-Gender:	Sex of User
-Age:	Age in bins
-Occupation:	Occupation(Masked)
-City_Category:	Category of the City (A,B,C)
-StayInCurrentCityYears:	Number of years stay in current city
-Marital_Status:	Marital Status
-ProductCategory:	Product Category (Masked)
-Purchase:	Purchase Amount
+</div>
 
- # Action Points for Walmart:
+<br/>
+## 🎯 Project Overview
 
-1.Run Targeted Campaigns for High-Spending Age Group (26–50 years)
-Focus promotions and loyalty rewards on this group using personalized emails, app banners,and exclusive deals during major sale events like Black Friday.
-2.Promote High-Value Products to Male Customers
-Advertise gadgets, electronics, and other premium items to male customers throughgender-targeted marketing across digital platforms and in-store placements.
-** Offer Budget-Friendly Combos for Low-Spending Groups (0–17 and 51+)**
-Create affordable product bundles like student essentials and wellness packs for seniors toincrease spending among these segments.
-3.Stop Using Marital Status for Marketing Segmentation
-Since marital status doesn’t impact spending behavior, Walmart should avoid splittingpromotions this way and instead focus on more effective segments like age and gender.
+**Problem Statement**  
+Walmart wants to understand **who spends more on Black Friday** — men or women? With an estimated 50 million customers, the company needs reliable insights into spending patterns by gender, age, and marital status to optimize marketing campaigns, inventory planning, and promotional strategies.
 
+**Business Goal**  
+Use statistical tools (**Confidence Intervals** and **Central Limit Theorem**) to make data-driven decisions about customer segmentation, targeted promotions, and resource allocation during high-traffic sales events like Black Friday.
 
- # Recommendations to Walmart:
-1.Focus on Gender-Based Spending Behavior
-Men spend more than women on Black Friday, indicating that gender plays a significant role
-in shopping habits.
-2.Segment Marketing by Age Group, Not Marital Status
-Age influences spending significantly (especially ages 26–50), while marital status does not.
-3.Prioritize High-Spending Age Groups
-Customers between 26–50 years old are the highest spenders and should be the main focusof promotional efforts.
-4.Support Lower-Spending Age Groups with Affordable Options
-Customers in the 0–17 and 51+ age brackets spend less and may need more value-orientedoffers.
-5.Use Statistical Tools like Confidence Intervals and CLT for Decision-Making
-Confidence intervals help identify if spending differences between segments are statisticallymeaningful.
-6.Avoid Marital Status–Based Segmentation
-Since married and unmarried customers have similar spending behavior, this segmentationadds little value.
-7.Leverage Clean Data for Targeted Strategies
-The data is clean and complete, which is ideal for building accurate marketing models.
-8.Analyze High-Value Outliers in Purchases
-Unusually high purchases could indicate hidden trends like bulk buying or premiumshopping patterns.
-9.Enable Personalized Customer Experiences
-Understanding customer segments allows Walmart to personalize both online and offlineshopping experiences.
-10.Use Customer Insights to Guide Inventory and Pricing
+**Dataset**  
+- Source: Black Friday transactional data (commonly from Kaggle / public retail datasets)  
+- Rows: ~550,000 transactions  
+- Key Columns: User_ID, Product_ID, Gender, Age (binned), Occupation, City_Category, StayInCurrentCityYears, Marital_Status, ProductCategory, Purchase (amount in ₹)
 
-Knowing what different segments spend helps Walmart stock the right products and pricethem appropriately.
+**Key Statistical Techniques Applied**  
+- Descriptive statistics & visualization  
+- Central Limit Theorem (CLT) for sample mean distribution  
+- 95% Confidence Intervals for population mean spending  
+- Comparison across segments (gender, age, marital status)
+
+## 📊 Key Business Insights & Recommendations
+
+1. **Men spend significantly more than women on average** during Black Friday → gender is a strong segmentation variable.  
+   → **Action**: Prioritize male-targeted promotions for high-value categories (electronics, gadgets).
+
+2. **Age group 26–50 years is the highest spending segment** → core revenue driver.  
+   → **Action**: Run personalized loyalty programs, exclusive deals, and app notifications for this group.
+
+3. **Marital status shows no significant difference in spending** → ineffective segmentation criterion.  
+   → **Action**: Stop using marital status for campaign targeting; redirect budget to age & gender.
+
+4. **Lower spending in 0–17 and 51+ age groups** → opportunity for value-driven offers.  
+   → **Action**: Introduce budget combos, student/senior discounts, and bundle deals.
+
+5. **High-value outliers detected** → potential bulk/premium buyers.  
+   → **Action**: Analyze outliers separately for VIP/loyalty program opportunities.
+
+**Statistical Confidence**: 95% CIs confirm that differences (especially gender) are meaningful and not due to sampling variation.
+
+## 🖼️ Project Screenshots
+
+<!-- Replace with your actual screenshot URLs from repo (upload to /screenshots folder) -->
+<div align="center">
+  <img src="https://github.com/ravindrasudha/Walmart-Confidence-Interval-and-CLT/raw/main/screenshots/age_spending_distribution.png" alt="Age vs Spending Distribution" width="45%"/>
+  <img src="https://github.com/ravindrasudha/Walmart-Confidence-Interval-and-CLT/raw/main/screenshots/gender_confidence_interval.png" alt="Gender Confidence Intervals" width="45%"/>
+  <br/><br/>
+  <img src="https://github.com/ravindrasudha/Walmart-Confidence-Interval-and-CLT/raw/main/screenshots/marital_status_comparison.png" alt="Marital Status Analysis" width="45%"/>
+  <img src="https://github.com/ravindrasudha/Walmart-Confidence-Interval-and-CLT/raw/main/screenshots/purchase_outliers.png" alt="Purchase Amount Outliers" width="45%"/>
+</div>
+
+## 🚀 Features
+
+- Clean data exploration & preprocessing  
+- Visual storytelling with distribution plots, boxplots & bar charts  
+- Application of CLT to justify normality of sample means  
+- Calculation & interpretation of 95% Confidence Intervals for key segments  
+- Clear business recommendations backed by statistical evidence  
+- Reproducible Jupyter Notebook with detailed comments
+
+## 🛠️ Installation & Usage
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/ravindrasudha/Walmart-Confidence-Interval-and-CLT.git
+   cd Walmart-Confidence-Interval-and-CLT
