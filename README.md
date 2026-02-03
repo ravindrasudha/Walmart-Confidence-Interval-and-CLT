@@ -8,9 +8,7 @@
 
   <!-- Alternative light version if you prefer -->
 
-  <img src="https://socialify.git.ci/ravindrasudha/Walmart-Confidence-Interval-and-CLT/image?custom_language=Python&description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTn7vLAq1blnq8v5qDn7ObGnM3oIgAyl0Za0Q%26s&name=1&owner=1&pulls=1&stargazers=1&theme=Light" 
-       alt="Socialify banner - Light theme" 
-       width="720"/>
+  <img src="https://socialify.git.ci/ravindrasudha/Walmart-Confidence-Interval-and-CLT/image?custom_language=Python&description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTn7vLAq1blnq8v5qDn7ObGnM3oIgAyl0Za0Q%26s&name=1&owner=1&pulls=1&stargazers=1&theme=Light" alt="Socialify banner - Light theme" width="720"/>
   
 
   <br/>
